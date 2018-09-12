@@ -21,14 +21,18 @@ k = 5
 g = [1, 1, 1, 1]
 
 U = [list(u) for u in itertools.product([0, 1], repeat=k)]
-for u in U:
-  print(u)
-print()
 
 V = []
 for u in U:
   V.append(multiply(g, u))
 
-for v in V:
-  print(v)
-print(len(V))
+def main():
+  for u in U:
+    print(u)
+  print()
+
+  for v in V:
+    print(v)
+
+if __name__ == '__main__':
+  main()
